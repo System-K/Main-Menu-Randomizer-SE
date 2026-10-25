@@ -14,9 +14,7 @@ crate-type = ["cdylib", "lib"]
 name = "replacer"
 path = "src/bin/bin.rs"
 
-[[bench]]
-name = "hash"
-harness = false
+# SKSE-Hotfixes: omit benchmark target; benches/hash.rs is absent from the published 2.0.4 source archive.
 
 [dependencies]
 serde = { version = "1.0", features = ["derive"] }
